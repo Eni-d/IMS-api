@@ -20,11 +20,12 @@ const inventory = require('./models/inventory')
 
 //Connect to DB
 // mongoose.connect('mongodb+srv://Nuel:chuks@cluster0.ldv66.mongodb.net/ims?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
-mongoose.connect('mongodb://localhost/test', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
-})
+mongoose.connect('mongodb+srv://dbDaniel:dbDaniel@cluster0.rcsbe.mongodb.net/Inventory?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
+// mongoose.connect('mongodb://localhost/test', {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//     useFindAndModify: false
+// })
 
 
 //Middleware
