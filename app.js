@@ -32,15 +32,15 @@ mongoose.connect('mongodb+srv://dbDaniel:dbDaniel@cluster0.rcsbe.mongodb.net/Inv
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
-app.use(session({
-    secret: 'secret',
-    resave: true,
-    saveUninitialized: true
-}))
+// app.use(session({
+//     secret: 'secret',
+//     resave: true,
+//     saveUninitialized: true
+// }))
 app.use(cookieParser('secret'))
-app.use(passport.initialize())
-app.use(passport.session())
-require('./passportConfig')(passport)
+// app.use(passport.initialize())
+// app.use(passport.session())
+// require('./passportConfig')(passport)
 app.use(express.static(path.join(__dirname, 'build')))
 
 //Routes
